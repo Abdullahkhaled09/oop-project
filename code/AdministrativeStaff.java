@@ -1,12 +1,11 @@
 
-public class AdministrativeStaff {
+public class AdministrativeStaff extends Person {
         private int StaffID;
-        private String name;
         private String role;
-        public AdministrativeStaff(int staffID, String name, String role) {
+        public AdministrativeStaff(int staffID, String role) {
             super();
-            StaffID = staffID;
-            this.name = name;
+            this.StaffID = staffID;
+           
             this.role = role;
         }
         public int getStaffID() {
@@ -15,12 +14,7 @@ public class AdministrativeStaff {
         public void setStaffID(int staffID) {
             StaffID = staffID;
         }
-        public String getName() {
-            return name;
-        }
-        public void setName(String name) {
-            this.name = name;
-        }
+       
         public String getRole() {
             return role;
         }
